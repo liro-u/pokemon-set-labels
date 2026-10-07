@@ -11,6 +11,7 @@ def fetch(url):
             err = e; time.sleep(2 + 2*i)
     raise err
 log = []
+os.makedirs('img/symbols', exist_ok=True); os.makedirs('img/logos', exist_ok=True)   # download cache (gitignored)
 for s in sets:
     s['slug'] = slug(s['name'])
     for kind, maxw in (('symbol', 480), ('logo', 1100)):

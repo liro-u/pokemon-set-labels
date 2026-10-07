@@ -3,3 +3,8 @@ node_modules/
 pipeline/pokecsv/
 __pycache__/
 pipeline/cjk/img/
+pipeline/img/
+pipeline/bulba_expansions.html
+pipeline/bulba_raw.json
+pipeline/sets_p1.json
+pipeline/fetch_log.txt

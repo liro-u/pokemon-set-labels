@@ -7,12 +7,13 @@
   "abbr": "BS",
   "cards": 102,
   "secret": 0,
+  "extras": [],
   "release": "1999-01-09",
-  "symbol_url": "https://images.pokemontcg.io/base1/symbol.png",
+  "symbol_url": null,
   "logo_url": "https://images.pokemontcg.io/base1/logo.png",
   "expno": 1,
   "slug": "base-set",
-  "symbol_img": "img/symbols/base-set.png",
+  "symbol_img": null,
   "logo_img": "img/logos/base-set.png"
  },
  {
@@ -23,6 +24,7 @@
   "abbr": "JU",
   "cards": 64,
   "secret": 0,
+  "extras": [],
   "release": "1999-06-16",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/2/2f/SetSymbolJungle.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/6/69/Jungle_Logo.png",
@@ -39,6 +41,7 @@
   "abbr": "FO",
   "cards": 62,
   "secret": 0,
+  "extras": [],
   "release": "1999-10-10",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/e6/SetSymbolFossil.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/7/7f/Fossil_Logo.png",
@@ -55,6 +58,7 @@
   "abbr": "B2",
   "cards": 130,
   "secret": 0,
+  "extras": [],
   "release": "2000-02-24",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/3/36/SetSymbolBase_Set_2.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/20/Base_Set_2_Logo.png",
@@ -71,6 +75,12 @@
   "abbr": "TR",
   "cards": 82,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2000-04-24",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/7e/SetSymbolTeam_Rocket.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/5/5d/Team_Rocket_Logo.png",
@@ -87,6 +97,7 @@
   "abbr": "G1",
   "cards": 132,
   "secret": 0,
+  "extras": [],
   "release": "2000-08-14",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/8/8f/SetSymbolGym_Heroes.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/1b/Gym_Heroes_Logo.png",
@@ -103,6 +114,7 @@
   "abbr": "G2",
   "cards": 132,
   "secret": 0,
+  "extras": [],
   "release": "2000-10-16",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/c/c4/SetSymbolGym_Challenge.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/e0/Gym_Challenge_Logo.png",
@@ -119,6 +131,7 @@
   "abbr": "N1",
   "cards": 111,
   "secret": 0,
+  "extras": [],
   "release": "2000-12-16",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/75/SetSymbolNeo_Genesis.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/5/55/Neo_Genesis_Logo_EN.png",
@@ -135,6 +148,7 @@
   "abbr": "N2",
   "cards": 75,
   "secret": 0,
+  "extras": [],
   "release": "2001-06-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/f8/SetSymbolNeo_Discovery.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/9/98/Neo_Discovery_Logo_EN.png",
@@ -151,6 +165,12 @@
   "abbr": "N3",
   "cards": 64,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   }
+  ],
   "release": "2001-09-21",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/c/c6/SetSymbolNeo_Revelation.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/49/Neo_Revelation_Logo_EN.png",
@@ -167,6 +187,12 @@
   "abbr": "N4",
   "cards": 105,
   "secret": 8,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 8
+   }
+  ],
   "release": "2002-02-28",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/8/88/SetSymbolNeo_Destiny.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/18/Neo_Destiny_Logo_EN.png",
@@ -183,6 +209,7 @@
   "abbr": "LC",
   "cards": 110,
   "secret": 0,
+  "extras": [],
   "release": "2002-05-24",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/a/a8/SetSymbolLegendary_Collection.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/8/81/Legendary_Collection_Logo.png",
@@ -199,6 +226,7 @@
   "abbr": "EX",
   "cards": 165,
   "secret": 0,
+  "extras": [],
   "release": "2002-09-15",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/4f/SetSymbolExpedition.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/ed/E1_Logo_EN.png",
@@ -215,6 +243,16 @@
   "abbr": "AQ",
   "cards": 147,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Holofoil",
+    "n": 32
+   },
+   {
+    "kind": "Secret",
+    "n": 3
+   }
+  ],
   "release": "2003-01-15",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/2/27/SetSymbolAquapolis.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/0d/E2_Logo_EN.png",
@@ -231,6 +269,16 @@
   "abbr": "SK",
   "cards": 144,
   "secret": 6,
+  "extras": [
+   {
+    "kind": "Holofoil",
+    "n": 32
+   },
+   {
+    "kind": "Secret",
+    "n": 6
+   }
+  ],
   "release": "2003-05-12",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/56/SetSymbolSkyridge.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/b/b8/E3_Logo_EN.png",
@@ -247,6 +295,7 @@
   "abbr": "RS",
   "cards": 109,
   "secret": 0,
+  "extras": [],
   "release": "2003-07-18",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/f2/SetSymbolRuby_and_Sapphire.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/ec/EX1_Logo_EN.png",
@@ -263,6 +312,7 @@
   "abbr": "SS",
   "cards": 100,
   "secret": 0,
+  "extras": [],
   "release": "2003-09-18",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/6a/SetSymbolSandstorm.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/6/65/EX2_Logo_EN.png",
@@ -279,6 +329,12 @@
   "abbr": "DR",
   "cards": 97,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   }
+  ],
   "release": "2003-11-24",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/08/SetSymbolDragon.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/24/EX3_Logo_EN.png",
@@ -295,6 +351,12 @@
   "abbr": "MA",
   "cards": 95,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   }
+  ],
   "release": "2004-03-15",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/b/b9/SetSymbolTeam_Magma_vs_Team_Aqua.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/10/EX4_Logo_EN.png",
@@ -311,6 +373,12 @@
   "abbr": "HL",
   "cards": 101,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2004-06-14",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/66/SetSymbolHidden_Legends.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/02/EX5_Logo_EN.png",
@@ -327,6 +395,12 @@
   "abbr": "RG",
   "cards": 112,
   "secret": 4,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 4
+   }
+  ],
   "release": "2004-08-30",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/f6/SetSymbolFireRed_and_LeafGreen.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/a/a4/EX6_Logo_EN.png",
@@ -343,6 +417,12 @@
   "abbr": "TRR",
   "cards": 109,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   }
+  ],
   "release": "2004-11-08",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/a/a0/SetSymbolTeam_Rocket_Returns.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/9/94/EX7_Logo_EN.png",
@@ -359,6 +439,12 @@
   "abbr": "DX",
   "cards": 107,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2005-02-14",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/73/SetSymbolDeoxys.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/2b/EX8_Logo_EN.png",
@@ -375,6 +461,12 @@
   "abbr": "EM",
   "cards": 106,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2005-05-09",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/5b/SetSymbolEmerald.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/e5/EX9_Logo_EN.png",
@@ -391,6 +483,16 @@
   "abbr": "UF",
   "cards": 115,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   },
+   {
+    "kind": "Unown",
+    "n": 28
+   }
+  ],
   "release": "2005-08-22",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/63/SetSymbolUnseen_Forces.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/3/31/EX10_Logo_EN.png",
@@ -407,6 +509,12 @@
   "abbr": "DS",
   "cards": 113,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2005-10-31",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/1/14/SetSymbolDelta_Species.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/7/7d/EX11_Logo_EN.png",
@@ -423,6 +531,12 @@
   "abbr": "LM",
   "cards": 92,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2006-02-13",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/2/2c/SetSymbolLegend_Maker.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/c/c6/EX12_Logo_EN.png",
@@ -439,6 +553,12 @@
   "abbr": "HP",
   "cards": 110,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2006-05-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/b/ba/SetSymbolHolon_Phantoms.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/45/EX13_Logo_EN.png",
@@ -455,6 +575,7 @@
   "abbr": "CG",
   "cards": 100,
   "secret": 0,
+  "extras": [],
   "release": "2006-08-30",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/e9/SetSymbolCrystal_Guardians.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/14/EX14_Logo_EN.png",
@@ -471,6 +592,7 @@
   "abbr": "DF",
   "cards": 101,
   "secret": 0,
+  "extras": [],
   "release": "2006-11-08",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/e3/SetSymbolDragon_Frontiers.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d4/EX15_Logo_EN.png",
@@ -487,6 +609,7 @@
   "abbr": "PK",
   "cards": 108,
   "secret": 0,
+  "extras": [],
   "release": "2007-02-14",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/5b/SetSymbolPower_Keepers.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/eb/EX16_Logo_EN.png",
@@ -503,6 +626,7 @@
   "abbr": "DP",
   "cards": 130,
   "secret": 0,
+  "extras": [],
   "release": "2007-05-23",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/1/1f/SetSymbolDiamond_and_Pearl.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/a/a2/DP1_Logo_EN.png",
@@ -519,6 +643,12 @@
   "abbr": "MT",
   "cards": 123,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2007-08-22",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/e2/SetSymbolMysterious_Treasures.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/1c/DP2_Logo_EN.png",
@@ -535,6 +665,7 @@
   "abbr": "SW",
   "cards": 132,
   "secret": 0,
+  "extras": [],
   "release": "2007-11-07",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/9c/SetSymbolSecret_Wonders.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/19/DP3_Logo_EN.png",
@@ -551,6 +682,7 @@
   "abbr": "GE",
   "cards": 106,
   "secret": 0,
+  "extras": [],
   "release": "2008-02-13",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/e8/SetSymbolGreat_Encounters.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/c/cc/DP4_Logo_EN.png",
@@ -567,6 +699,7 @@
   "abbr": "MD",
   "cards": 100,
   "secret": 0,
+  "extras": [],
   "release": "2008-05-21",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/7b/SetSymbolMajestic_Dawn.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/de/DP5_Logo_EN.png",
@@ -583,6 +716,7 @@
   "abbr": "LA",
   "cards": 146,
   "secret": 0,
+  "extras": [],
   "release": "2008-08-20",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/2/28/SetSymbolLegends_Awakened.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d7/DP6_Logo_EN.png",
@@ -599,6 +733,16 @@
   "abbr": "SF",
   "cards": 100,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   },
+   {
+    "kind": "Shiny Pokémon",
+    "n": 3
+   }
+  ],
   "release": "2008-11-05",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/72/SetSymbolStormfront.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d5/DP7_Logo_EN.png",
@@ -615,6 +759,16 @@
   "abbr": "PL",
   "cards": 127,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   },
+   {
+    "kind": "Shiny Pokémon",
+    "n": 3
+   }
+  ],
   "release": "2009-02-11",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/7c/SetSymbolPlatinum.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/47/PL1_Logo_EN.png",
@@ -631,6 +785,16 @@
   "abbr": "RR",
   "cards": 111,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   },
+   {
+    "kind": "Rotom",
+    "n": 6
+   }
+  ],
   "release": "2009-05-16",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/64/SetSymbolRising_Rivals.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/c/cd/PL2_Logo_EN.png",
@@ -647,6 +811,16 @@
   "abbr": "SV",
   "cards": 147,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   },
+   {
+    "kind": "Shiny Pokémon",
+    "n": 3
+   }
+  ],
   "release": "2009-08-19",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/f3/SetSymbolSupreme_Victors.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/1b/PL3_Logo_EN.png",
@@ -663,6 +837,16 @@
   "abbr": "AR",
   "cards": 99,
   "secret": 0,
+  "extras": [
+   {
+    "kind": "Arceus",
+    "n": 9
+   },
+   {
+    "kind": "Shiny Pokémon",
+    "n": 3
+   }
+  ],
   "release": "2009-11-04",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/96/SetSymbolArceus.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/00/PL4_Logo_EN.png",
@@ -679,6 +863,12 @@
   "abbr": "HS",
   "cards": 123,
   "secret": 0,
+  "extras": [
+   {
+    "kind": "Alph Lithograph",
+    "n": 1
+   }
+  ],
   "release": "2010-02-10",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/3/30/SetSymbolHeartGold_and_SoulSilver.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/02/HS1_Logo_EN.png",
@@ -695,6 +885,12 @@
   "abbr": "UL",
   "cards": 95,
   "secret": 0,
+  "extras": [
+   {
+    "kind": "Alph Lithograph",
+    "n": 1
+   }
+  ],
   "release": "2010-05-12",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/42/SetSymbolUnleashed.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/27/HS2_Logo_EN.png",
@@ -711,6 +907,12 @@
   "abbr": "UD",
   "cards": 90,
   "secret": 0,
+  "extras": [
+   {
+    "kind": "Alph Lithograph",
+    "n": 1
+   }
+  ],
   "release": "2010-08-18",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/73/SetSymbolUndaunted.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/06/HS3_Logo_EN.png",
@@ -727,6 +929,12 @@
   "abbr": "TM",
   "cards": 102,
   "secret": 0,
+  "extras": [
+   {
+    "kind": "Alph Lithograph",
+    "n": 1
+   }
+  ],
   "release": "2010-11-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/00/SetSymbolTriumphant.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/9/97/HS4_Logo_EN.png",
@@ -743,6 +951,12 @@
   "abbr": "CL",
   "cards": 95,
   "secret": 0,
+  "extras": [
+   {
+    "kind": "Shiny Legendary",
+    "n": 11
+   }
+  ],
   "release": "2011-02-09",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/5b/SetSymbolCall_of_Legends.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/b/b5/COL1_Logo_EN.png",
@@ -759,6 +973,12 @@
   "abbr": "BLW",
   "cards": 114,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2011-04-25",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/64/SetSymbolBlack_and_White.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/6/63/BW1_Logo_EN.png",
@@ -775,6 +995,7 @@
   "abbr": "EPO",
   "cards": 98,
   "secret": 0,
+  "extras": [],
   "release": "2011-08-31",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/43/SetSymbolEmerging_Powers.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/40/BW2_Logo_EN.png",
@@ -791,6 +1012,12 @@
   "abbr": "NVI",
   "cards": 101,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2011-11-16",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/b/b3/SetSymbolNoble_Victories.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/18/BW3_Logo_EN.png",
@@ -807,6 +1034,12 @@
   "abbr": "NXD",
   "cards": 99,
   "secret": 4,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 4
+   }
+  ],
   "release": "2012-02-08",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/63/SetSymbolNext_Destinies.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/16/BW4_Logo_EN.png",
@@ -823,6 +1056,12 @@
   "abbr": "DEX",
   "cards": 108,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   }
+  ],
   "release": "2012-05-09",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/2/25/SetSymbolDark_Explorers.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d3/BW5_Logo_EN.png",
@@ -839,6 +1078,12 @@
   "abbr": "DRX",
   "cards": 124,
   "secret": 4,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 4
+   }
+  ],
   "release": "2012-08-15",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/a/af/SetSymbolDragons_Exalted.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/08/BW6_Logo_EN.png",
@@ -855,6 +1100,12 @@
   "abbr": "DRV",
   "cards": 20,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2012-10-05",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/09/SetSymbolDragon_Vault.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/0e/Dragon_Vault_Logo_EN.png",
@@ -871,6 +1122,12 @@
   "abbr": "BCR",
   "cards": 149,
   "secret": 4,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 4
+   }
+  ],
   "release": "2012-11-07",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/a/a4/SetSymbolBoundaries_Crossed.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/8/86/BW7_Logo_EN.png",
@@ -887,6 +1144,12 @@
   "abbr": "PLS",
   "cards": 135,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   }
+  ],
   "release": "2013-02-06",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/93/SetSymbolPlasma_Storm.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/20/BW8_Logo_EN.png",
@@ -903,6 +1166,12 @@
   "abbr": "PLF",
   "cards": 116,
   "secret": 6,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 6
+   }
+  ],
   "release": "2013-05-08",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/49/SetSymbolPlasma_Freeze.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d6/BW9_Logo_EN.png",
@@ -919,6 +1188,12 @@
   "abbr": "PLB",
   "cards": 101,
   "secret": 4,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 4
+   }
+  ],
   "release": "2013-08-14",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/60/SetSymbolPlasma_Blast.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/c/cc/BW10_Logo_EN.png",
@@ -935,6 +1210,16 @@
   "abbr": "LTR",
   "cards": 113,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   },
+   {
+    "kind": "Radiant Collection",
+    "n": 25
+   }
+  ],
   "release": "2013-11-06",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/3/3c/SetSymbolLegendary_Treasures.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/45/BW11_Logo_EN.png",
@@ -951,6 +1236,7 @@
   "abbr": "KSS",
   "cards": 39,
   "secret": 0,
+  "extras": [],
   "release": "2013-11-08",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/0b/SetSymbolKalos_Starter_Set.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/a/a6/Kalos_Starter_Set_Logo_EN.png",
@@ -967,6 +1253,7 @@
   "abbr": "XY",
   "cards": 146,
   "secret": 0,
+  "extras": [],
   "release": "2014-02-05",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/6b/SetSymbolXY.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/4b/XY1_Logo_EN.png",
@@ -983,6 +1270,12 @@
   "abbr": "FLF",
   "cards": 106,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   }
+  ],
   "release": "2014-05-07",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/1/1f/SetSymbolFlashfire.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/ec/XY2_Logo_EN.png",
@@ -999,6 +1292,12 @@
   "abbr": "FFI",
   "cards": 111,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   }
+  ],
   "release": "2014-08-13",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/07/SetSymbolFurious_Fists.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/11/XY3_Logo_EN.png",
@@ -1015,6 +1314,12 @@
   "abbr": "PHF",
   "cards": 119,
   "secret": 3,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 3
+   }
+  ],
   "release": "2014-11-05",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/1/10/SetSymbolPhantom_Forces.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/7/7b/XY4_Logo_EN.png",
@@ -1031,6 +1336,12 @@
   "abbr": "PRC",
   "cards": 160,
   "secret": 4,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 4
+   }
+  ],
   "release": "2015-02-04",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/e3/SetSymbolPrimal_Clash.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/2f/XY5_Logo_EN.png",
@@ -1047,6 +1358,7 @@
   "abbr": "DCR",
   "cards": 34,
   "secret": 0,
+  "extras": [],
   "release": "2015-03-25",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/06/SetSymbolDouble_Crisis.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/06/Double_Crisis_Logo_EN.png",
@@ -1063,6 +1375,12 @@
   "abbr": "ROS",
   "cards": 108,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   }
+  ],
   "release": "2015-05-06",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/b/b1/SetSymbolRoaring_Skies.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/12/XY6_Logo_EN.png",
@@ -1079,6 +1397,12 @@
   "abbr": "AOR",
   "cards": 98,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   }
+  ],
   "release": "2015-08-12",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/4e/SetSymbolAncient_Origins.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/a/a0/XY7_Logo_EN.png",
@@ -1095,6 +1419,12 @@
   "abbr": "BKT",
   "cards": 162,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   }
+  ],
   "release": "2015-11-04",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/0f/SetSymbolBREAKthrough.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/c/cf/XY8_Logo_EN.png",
@@ -1111,6 +1441,12 @@
   "abbr": "BKP",
   "cards": 122,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2016-02-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/d/d4/SetSymbolBREAKpoint.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/a/a8/XY9_Logo_EN.png",
@@ -1127,6 +1463,12 @@
   "abbr": "GEN",
   "cards": 83,
   "secret": 0,
+  "extras": [
+   {
+    "kind": "Radiant Collection",
+    "n": 32
+   }
+  ],
   "release": "2016-02-22",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/54/SetSymbolGenerations.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/df/Generations_Logo_EN.png",
@@ -1143,6 +1485,12 @@
   "abbr": "FCO",
   "cards": 124,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   }
+  ],
   "release": "2016-05-02",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/f2/SetSymbolFates_Collide.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/8/88/XY10_Logo_EN.png",
@@ -1159,6 +1507,12 @@
   "abbr": "STS",
   "cards": 114,
   "secret": 2,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 2
+   }
+  ],
   "release": "2016-08-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/7b/SetSymbolSteam_Siege.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/29/XY11_Logo_EN.png",
@@ -1175,6 +1529,12 @@
   "abbr": "EVO",
   "cards": 108,
   "secret": 5,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 5
+   }
+  ],
   "release": "2016-11-02",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/2/2b/SetSymbolEvolutions.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/9/91/XY12_Logo_EN.png",
@@ -1191,6 +1551,12 @@
   "abbr": "SUM",
   "cards": 149,
   "secret": 14,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 14
+   }
+  ],
   "release": "2017-02-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/c/cb/SetSymbolSun_and_Moon.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/0e/SM1_Logo_EN.png",
@@ -1207,6 +1573,12 @@
   "abbr": "GRI",
   "cards": 145,
   "secret": 24,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 24
+   }
+  ],
   "release": "2017-05-05",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/68/SetSymbolGuardians_Rising.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/f/f9/SM2_Logo_EN.png",
@@ -1223,6 +1595,12 @@
   "abbr": "BUS",
   "cards": 147,
   "secret": 22,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 22
+   }
+  ],
   "release": "2017-08-04",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/5f/SetSymbolBurning_Shadows.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/4a/SM3_Logo_EN.png",
@@ -1239,6 +1617,12 @@
   "abbr": "SLG",
   "cards": 73,
   "secret": 5,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 5
+   }
+  ],
   "release": "2017-10-06",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/54/SetSymbolShining_Legends.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/3/3e/Shining_Legends_Logo_EN.png",
@@ -1255,6 +1639,12 @@
   "abbr": "CIN",
   "cards": 111,
   "secret": 13,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 13
+   }
+  ],
   "release": "2017-11-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/46/SetSymbolCrimson_Invasion.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/5/5e/SM4_Logo_EN.png",
@@ -1271,6 +1661,12 @@
   "abbr": "UPR",
   "cards": 156,
   "secret": 17,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 17
+   }
+  ],
   "release": "2018-02-02",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/b/b8/SetSymbolUltra_Prism.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/5/5f/SM5_Logo_EN.png",
@@ -1287,6 +1683,12 @@
   "abbr": "FLI",
   "cards": 131,
   "secret": 15,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 15
+   }
+  ],
   "release": "2018-05-04",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/8/8a/SetSymbolForbidden_Light.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/b/b9/SM6_Logo_EN.png",
@@ -1303,6 +1705,12 @@
   "abbr": "CES",
   "cards": 168,
   "secret": 15,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 15
+   }
+  ],
   "release": "2018-08-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/4a/SetSymbolCelestial_Storm.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/13/SM7_Logo_EN.png",
@@ -1319,6 +1727,12 @@
   "abbr": "DRM",
   "cards": 70,
   "secret": 8,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 8
+   }
+  ],
   "release": "2018-09-07",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/43/SetSymbolDragon_Majesty.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/04/Dragon_Majesty_Logo_EN.png",
@@ -1335,6 +1749,12 @@
   "abbr": "LOT",
   "cards": 214,
   "secret": 22,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 22
+   }
+  ],
   "release": "2018-11-02",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/c/c8/SetSymbolLost_Thunder.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/c/c5/SM8_Logo_EN.png",
@@ -1351,6 +1771,12 @@
   "abbr": "TEU",
   "cards": 181,
   "secret": 15,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 15
+   }
+  ],
   "release": "2019-02-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/2/27/SetSymbolTeam_Up.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/f/fd/SM9_Logo_EN.png",
@@ -1367,6 +1793,7 @@
   "abbr": "DET",
   "cards": 18,
   "secret": 0,
+  "extras": [],
   "release": "2019-03-29",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/6a/SetSymbolDetective_Pikachu.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/df/Detective_Pikachu_movie_logo.png",
@@ -1383,6 +1810,12 @@
   "abbr": "UNB",
   "cards": 214,
   "secret": 20,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 20
+   }
+  ],
   "release": "2019-05-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/eb/SetSymbolUnbroken_Bonds.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/04/SM10_Logo_EN.png",
@@ -1399,6 +1832,12 @@
   "abbr": "UNM",
   "cards": 236,
   "secret": 22,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 22
+   }
+  ],
   "release": "2019-08-02",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/e5/SetSymbolUnified_Minds.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/9/92/SM11_Logo_EN.png",
@@ -1415,6 +1854,16 @@
   "abbr": "HIF",
   "cards": 68,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   },
+   {
+    "kind": "Shiny Vault",
+    "n": 94
+   }
+  ],
   "release": "2019-08-23",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/1/14/SetSymbolHidden_Fates.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d6/Hidden_Fates_Logo_EN.png",
@@ -1431,6 +1880,12 @@
   "abbr": "CEC",
   "cards": 236,
   "secret": 35,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 35
+   }
+  ],
   "release": "2019-11-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/3/3a/SetSymbolCosmic_Eclipse.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/8/8a/SM12_Logo_EN.png",
@@ -1447,6 +1902,12 @@
   "abbr": "SSH",
   "cards": 202,
   "secret": 14,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 14
+   }
+  ],
   "release": "2020-02-07",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/51/SetSymbolSword_and_Shield.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/5/50/SWSH1_Logo_EN.png",
@@ -1463,6 +1924,12 @@
   "abbr": "RCL",
   "cards": 192,
   "secret": 17,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 17
+   }
+  ],
   "release": "2020-05-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/0f/SetSymbolRebel_Clash.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/29/SWSH2_Logo_EN.png",
@@ -1479,6 +1946,12 @@
   "abbr": "DAA",
   "cards": 189,
   "secret": 12,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 12
+   }
+  ],
   "release": "2020-08-14",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/d/d9/SetSymbolDarkness_Ablaze.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/e0/SWSH3_Logo_EN.png",
@@ -1495,6 +1968,12 @@
   "abbr": "CPA",
   "cards": 73,
   "secret": 7,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 7
+   }
+  ],
   "release": "2020-09-25",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/4d/SetSymbolChampion_Path.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/f/f2/Champion_Path_Logo_EN.png",
@@ -1511,6 +1990,12 @@
   "abbr": "VIV",
   "cards": 185,
   "secret": 18,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 18
+   }
+  ],
   "release": "2020-11-13",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/9b/SetSymbolVivid_Voltage.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/c/c1/SWSH4_Logo_EN.png",
@@ -1527,6 +2012,16 @@
   "abbr": "SHF",
   "cards": 72,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   },
+   {
+    "kind": "Shiny Vault",
+    "n": 122
+   }
+  ],
   "release": "2021-02-19",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/64/SetSymbolShining_Fates.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/6/63/Shining_Fates_Logo_EN.png",
@@ -1543,6 +2038,12 @@
   "abbr": "BST",
   "cards": 163,
   "secret": 20,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 20
+   }
+  ],
   "release": "2021-03-19",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/1/16/SetSymbolBattle_Styles.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/b/b3/SWSH5_Logo_EN.png",
@@ -1559,6 +2060,12 @@
   "abbr": "CRE",
   "cards": 198,
   "secret": 35,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 35
+   }
+  ],
   "release": "2021-06-18",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/02/SetSymbolChilling_Reign.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/01/SWSH6_Logo_EN.png",
@@ -1575,6 +2082,12 @@
   "abbr": "EVS",
   "cards": 203,
   "secret": 34,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 34
+   }
+  ],
   "release": "2021-08-27",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/c/cb/SetSymbolEvolving_Skies.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/a/ac/SWSH7_Logo_EN.png",
@@ -1591,6 +2104,12 @@
   "abbr": "CEL",
   "cards": 25,
   "secret": 0,
+  "extras": [
+   {
+    "kind": "Classic Collection",
+    "n": 25
+   }
+  ],
   "release": "2021-10-08",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/3/32/SetSymbolCelebrations.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/3/32/Celebrations_Logo_EN.png",
@@ -1607,6 +2126,12 @@
   "abbr": "FST",
   "cards": 264,
   "secret": 20,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 20
+   }
+  ],
   "release": "2021-11-12",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/79/SetSymbolFusion_Strike.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/9/94/SWSH8_Logo_EN.png",
@@ -1623,6 +2148,16 @@
   "abbr": "BRS",
   "cards": 172,
   "secret": 14,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 14
+   },
+   {
+    "kind": "Trainer Gallery",
+    "n": 30
+   }
+  ],
   "release": "2022-02-25",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/00/SetSymbolBrilliant_Stars.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/1e/SWSH9_Logo_EN.png",
@@ -1639,6 +2174,16 @@
   "abbr": "ASR",
   "cards": 189,
   "secret": 27,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 27
+   },
+   {
+    "kind": "Trainer Gallery",
+    "n": 30
+   }
+  ],
   "release": "2022-05-27",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/7b/SetSymbolAstral_Radiance.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/e0/SWSH10_Logo_EN.png",
@@ -1655,6 +2200,12 @@
   "abbr": "PGO",
   "cards": 78,
   "secret": 10,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 10
+   }
+  ],
   "release": "2022-07-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/01/SetSymbolPok%C3%A9mon_GO.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/f/f6/Pok%C3%A9mon_GO_logo.png",
@@ -1671,6 +2222,16 @@
   "abbr": "LOR",
   "cards": 196,
   "secret": 21,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 21
+   },
+   {
+    "kind": "Trainer Gallery",
+    "n": 30
+   }
+  ],
   "release": "2022-09-09",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/7e/SetSymbolLost_Origin.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/4d/SWSH11_Logo_EN.png",
@@ -1687,6 +2248,16 @@
   "abbr": "SIT",
   "cards": 195,
   "secret": 20,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 20
+   },
+   {
+    "kind": "Trainer Gallery",
+    "n": 30
+   }
+  ],
   "release": "2022-11-11",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/55/SetSymbolSilver_Tempest.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/03/SWSH12_Logo_EN.png",
@@ -1703,6 +2274,16 @@
   "abbr": "CRZ",
   "cards": 159,
   "secret": 1,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 1
+   },
+   {
+    "kind": "Galarian Gallery",
+    "n": 70
+   }
+  ],
   "release": "2023-01-20",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/2/21/SetSymbolCrown_Zenith.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/9/9a/Crown_Zenith_Logo_EN.png",
@@ -1719,6 +2300,12 @@
   "abbr": "SVI",
   "cards": 198,
   "secret": 60,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 60
+   }
+  ],
   "release": "2023-03-31",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/9c/SetSymbolScarlet_and_Violet.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/7/72/SV1_Logo_EN.png",
@@ -1735,6 +2322,12 @@
   "abbr": "PAL",
   "cards": 193,
   "secret": 86,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 86
+   }
+  ],
   "release": "2023-06-09",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/8/8d/SetSymbolPaldea_Evolved.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d8/SV2_Logo_EN.png",
@@ -1751,6 +2344,12 @@
   "abbr": "OBF",
   "cards": 197,
   "secret": 33,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 33
+   }
+  ],
   "release": "2023-08-11",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/3/3d/SetSymbolObsidian_Flames.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/b/bd/SV3_Logo_EN.png",
@@ -1767,6 +2366,12 @@
   "abbr": "MEW",
   "cards": 165,
   "secret": 42,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 42
+   }
+  ],
   "release": "2023-09-22",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/71/SetSymbol151.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/26/SV3.5_Logo_EN.png",
@@ -1783,6 +2388,12 @@
   "abbr": "PAR",
   "cards": 182,
   "secret": 84,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 84
+   }
+  ],
   "release": "2023-11-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/fa/SetSymbolParadox_Rift.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/7/7e/SV4_Logo_EN.png",
@@ -1799,6 +2410,12 @@
   "abbr": "PAF",
   "cards": 91,
   "secret": 154,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 154
+   }
+  ],
   "release": "2024-01-26",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/ea/SetSymbolPaldean_Fates.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/20/SV4.5_Logo_EN.png",
@@ -1815,6 +2432,12 @@
   "abbr": "TEF",
   "cards": 162,
   "secret": 56,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 56
+   }
+  ],
   "release": "2024-03-22",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/3/33/SetSymbolTemporal_Forces.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d9/SV5_Logo_EN.png",
@@ -1831,6 +2454,12 @@
   "abbr": "TWM",
   "cards": 167,
   "secret": 59,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 59
+   }
+  ],
   "release": "2024-05-24",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/65/SetSymbolTwilight_Masquerade.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/15/SV6_Logo_EN.png",
@@ -1847,6 +2476,12 @@
   "abbr": "SFA",
   "cards": 64,
   "secret": 35,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 35
+   }
+  ],
   "release": "2024-08-02",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/74/SetSymbolShrouded_Fable.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/4/43/SV6.5_Logo_EN.png",
@@ -1863,6 +2498,12 @@
   "abbr": "SCR",
   "cards": 142,
   "secret": 33,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 33
+   }
+  ],
   "release": "2024-09-13",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/f1/SetSymbolStellar_Crown.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/8/8d/SV7_Logo_EN.png",
@@ -1879,6 +2520,12 @@
   "abbr": "SSP",
   "cards": 191,
   "secret": 61,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 61
+   }
+  ],
   "release": "2024-11-08",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/d/de/SetSymbolSurging_Sparks.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d1/SV8_Logo_EN.png",
@@ -1895,6 +2542,12 @@
   "abbr": "PRE",
   "cards": 131,
   "secret": 49,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 49
+   }
+  ],
   "release": "2025-01-17",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/a/a2/SetSymbolPrismatic_Evolutions.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/b/b8/SV8.5_Logo_EN.png",
@@ -1911,6 +2564,12 @@
   "abbr": "JTG",
   "cards": 159,
   "secret": 31,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 31
+   }
+  ],
   "release": "2025-03-28",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/51/SetSymbolJourney_Together.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/2/2e/SV9_Logo_EN.png",
@@ -1927,6 +2586,12 @@
   "abbr": "DRI",
   "cards": 182,
   "secret": 62,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 62
+   }
+  ],
   "release": "2025-05-30",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/d/d9/SetSymbolDestined_Rivals.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/f/fd/SV10_Logo_EN.png",
@@ -1943,6 +2608,12 @@
   "abbr": "BLK",
   "cards": 86,
   "secret": 86,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 86
+   }
+  ],
   "release": "2025-07-18",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/78/SetSymbolBlack_Bolt.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/a/ab/SV10.5_BLK_Logo_EN.png",
@@ -1959,7 +2630,13 @@
   "abbr": "WHT",
   "cards": 86,
   "secret": 87,
-  "release": "2025-07-18",
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 87
+   }
+  ],
+  "release": "2025-01-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/49/SetSymbolWhite_Flare.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/5/5c/SV10.5_WHT_Logo_EN.png",
   "expno": 19,
@@ -1975,6 +2652,12 @@
   "abbr": "MEG",
   "cards": 132,
   "secret": 56,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 56
+   }
+  ],
   "release": "2025-09-26",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/fc/SetSymbolMega_Evolution.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/b/be/ME1_Logo_EN.png",
@@ -1991,6 +2674,12 @@
   "abbr": "PFL",
   "cards": 94,
   "secret": 36,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 36
+   }
+  ],
   "release": "2025-11-14",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/7f/SetSymbolPhantasmal_Flames.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/f/fa/ME2_Logo_EN.png",
@@ -2007,6 +2696,12 @@
   "abbr": "ASC",
   "cards": 217,
   "secret": 78,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 78
+   }
+  ],
   "release": "2026-01-30",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/0e/SetSymbolAscended_Heroes.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/b/b9/ME2.5_Logo_EN.png",
@@ -2023,6 +2718,12 @@
   "abbr": "POR",
   "cards": 88,
   "secret": 36,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 36
+   }
+  ],
   "release": "2026-03-27",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/09/SetSymbolPerfect_Order.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/a/ae/ME3_Logo_EN.png",
@@ -2039,6 +2740,12 @@
   "abbr": "CRI",
   "cards": 86,
   "secret": 36,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 36
+   }
+  ],
   "release": "2026-05-22",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/5/50/SetSymbolChaos_Rising.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/3/31/ME4_Logo_EN.png",
@@ -2055,6 +2762,12 @@
   "abbr": "PBL",
   "cards": 84,
   "secret": 36,
+  "extras": [
+   {
+    "kind": "Secret",
+    "n": 36
+   }
+  ],
   "release": "2026-07-17",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/c/c4/SetSymbolPitch_Black.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/e4/ME5_Logo_EN.png",
@@ -2071,6 +2784,7 @@
   "abbr": "30C",
   "cards": 128,
   "secret": 0,
+  "extras": [],
   "release": "2026-09-16",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/92/SetSymbol30th_Celebration.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/d/d9/30th_Celebration_Logo_EN.png",
@@ -2087,6 +2801,7 @@
   "abbr": "DLR",
   "cards": 103,
   "secret": 0,
+  "extras": [],
   "release": "2026-11-06",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/44/SetSymbolDelta_Reign.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/e9/ME6_Logo_EN.png",
@@ -2096,6 +2811,176 @@
   "logo_img": "img/logos/mega-evolution-delta-reign.png"
  },
  {
+  "name": "Wizards Black Star Promos",
+  "series": "Base",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "WP",
+  "cards": 53,
+  "secret": 0,
+  "extras": [],
+  "release": "1999-07-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/5/58/SetSymbolPromo.png",
+  "logo_url": "https://images.pokemontcg.io/basep/logo.png",
+  "expno": null,
+  "slug": "wizards-black-star-promos",
+  "symbol_img": "img/symbols/wizards-black-star-promos.png",
+  "logo_img": "img/logos/wizards-black-star-promos.png"
+ },
+ {
+  "name": "Nintendo Black Star Promos",
+  "series": "EX",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "NP",
+  "cards": 40,
+  "secret": 0,
+  "extras": [],
+  "release": "2003-10-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/5/58/SetSymbolPromo.png",
+  "logo_url": "https://images.pokemontcg.io/np/logo.png",
+  "expno": null,
+  "slug": "nintendo-black-star-promos",
+  "symbol_img": "img/symbols/nintendo-black-star-promos.png",
+  "logo_img": "img/logos/nintendo-black-star-promos.png"
+ },
+ {
+  "name": "DP Black Star Promos",
+  "series": "Diamond & Pearl",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "DPP",
+  "cards": 56,
+  "secret": 0,
+  "extras": [],
+  "release": "2007-05-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/5/58/SetSymbolPromo.png",
+  "logo_url": "https://images.pokemontcg.io/dpp/logo.png",
+  "expno": null,
+  "slug": "dp-black-star-promos",
+  "symbol_img": "img/symbols/dp-black-star-promos.png",
+  "logo_img": "img/logos/dp-black-star-promos.png"
+ },
+ {
+  "name": "HGSS Black Star Promos",
+  "series": "HeartGold & SoulSilver",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "HSP",
+  "cards": 25,
+  "secret": 0,
+  "extras": [],
+  "release": "2010-02-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/5/58/SetSymbolPromo.png",
+  "logo_url": "https://images.pokemontcg.io/hsp/logo.png",
+  "expno": null,
+  "slug": "hgss-black-star-promos",
+  "symbol_img": "img/symbols/hgss-black-star-promos.png",
+  "logo_img": "img/logos/hgss-black-star-promos.png"
+ },
+ {
+  "name": "BW Black Star Promos",
+  "series": "Black & White",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "BWP",
+  "cards": 99,
+  "secret": 0,
+  "extras": [],
+  "release": "2011-03-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/5/58/SetSymbolPromo.png",
+  "logo_url": "https://images.pokemontcg.io/bwp/logo.png",
+  "expno": null,
+  "slug": "bw-black-star-promos",
+  "symbol_img": "img/symbols/bw-black-star-promos.png",
+  "logo_img": "img/logos/bw-black-star-promos.png"
+ },
+ {
+  "name": "XY Black Star Promos",
+  "series": "XY",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "XYP",
+  "cards": 211,
+  "secret": 0,
+  "extras": [],
+  "release": "2013-10-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/5/58/SetSymbolPromo.png",
+  "logo_url": "https://images.pokemontcg.io/xyp/logo.png",
+  "expno": null,
+  "slug": "xy-black-star-promos",
+  "symbol_img": "img/symbols/xy-black-star-promos.png",
+  "logo_img": "img/logos/xy-black-star-promos.png"
+ },
+ {
+  "name": "SM Black Star Promos",
+  "series": "Sun & Moon",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "SMP",
+  "cards": 248,
+  "secret": 0,
+  "extras": [],
+  "release": "2016-11-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/5/58/SetSymbolPromo.png",
+  "logo_url": "https://images.pokemontcg.io/smp/logo.png",
+  "expno": null,
+  "slug": "sm-black-star-promos",
+  "symbol_img": "img/symbols/sm-black-star-promos.png",
+  "logo_img": "img/logos/sm-black-star-promos.png"
+ },
+ {
+  "name": "SWSH Black Star Promos",
+  "series": "Sword & Shield",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "SWSD",
+  "cards": 307,
+  "secret": 0,
+  "extras": [],
+  "release": "2019-11-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/5/58/SetSymbolPromo.png",
+  "logo_url": "https://images.pokemontcg.io/swshp/logo.png",
+  "expno": null,
+  "slug": "swsh-black-star-promos",
+  "symbol_img": "img/symbols/swsh-black-star-promos.png",
+  "logo_img": "img/logos/swsh-black-star-promos.png"
+ },
+ {
+  "name": "SVP Black Star Promos",
+  "series": "Scarlet & Violet",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "SVP",
+  "cards": null,
+  "secret": 0,
+  "extras": [],
+  "release": "2023-03-31",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/d/d8/SetSymbolSVP_Black_Star_Promos.png",
+  "logo_url": null,
+  "expno": null,
+  "slug": "svp-black-star-promos",
+  "symbol_img": "img/symbols/svp-black-star-promos.png",
+  "logo_img": null
+ },
+ {
+  "name": "MEP Black Star Promos",
+  "series": "Mega Evolution",
+  "type": "Promo",
+  "setno": "",
+  "abbr": "MEP",
+  "cards": null,
+  "secret": 0,
+  "extras": [],
+  "release": "2025-09-01",
+  "symbol_url": "https://archives.bulbagarden.net/media/upload/0/0c/SetSymbolMEP_Black_Star_Promos.png",
+  "logo_url": null,
+  "expno": null,
+  "slug": "mep-black-star-promos",
+  "symbol_img": "img/symbols/mep-black-star-promos.png",
+  "logo_img": null
+ },
+ {
   "name": "McDonald's Collection 2011",
   "series": "McDonald's",
   "type": "Other",
@@ -2103,6 +2988,7 @@
   "abbr": "M11",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2011-06-17",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/8/8a/SetSymbolMcDonalds_Collection.png",
   "logo_url": "https://images.pokemontcg.io/mcd11/logo.png",
@@ -2119,6 +3005,7 @@
   "abbr": "M12",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2012-06-15",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/9b/SetSymbolMcDonalds_Collection_2012.png",
   "logo_url": "https://images.pokemontcg.io/mcd12/logo.png",
@@ -2135,6 +3022,7 @@
   "abbr": "M13",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2013-10-13",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/8/8b/SetSymbolMcDonalds_Collection_2013.png",
   "logo_url": null,
@@ -2151,6 +3039,7 @@
   "abbr": "M14",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2014-05-23",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/ee/SetSymbolMcDonalds_Collection_2014.png",
   "logo_url": "https://images.pokemontcg.io/mcd14/logo.png",
@@ -2167,6 +3056,7 @@
   "abbr": "M15",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2015-10-14",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/6f/SetSymbolMcDonalds_Collection_2015.png",
   "logo_url": "https://images.pokemontcg.io/mcd15/logo.png",
@@ -2183,6 +3073,7 @@
   "abbr": "M16",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2016-08-19",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/4a/SetSymbolMcDonalds_Collection_2016.png",
   "logo_url": "https://images.pokemontcg.io/mcd16/logo.png",
@@ -2199,6 +3090,7 @@
   "abbr": "M17",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2017-07-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/41/SetSymbolMcDonalds_Collection_2017.png",
   "logo_url": "https://images.pokemontcg.io/mcd17/logo.png",
@@ -2215,6 +3107,7 @@
   "abbr": "M18",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2018-10-16",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/e/ea/SetSymbolMcDonalds_Collection_2018.png",
   "logo_url": "https://images.pokemontcg.io/mcd18/logo.png",
@@ -2231,6 +3124,7 @@
   "abbr": "M19",
   "cards": 12,
   "secret": 0,
+  "extras": [],
   "release": "2019-10-15",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/c/c5/SetSymbolMcDonalds_Collection_2019.png",
   "logo_url": "https://images.pokemontcg.io/mcd19/logo.png",
@@ -2247,6 +3141,7 @@
   "abbr": "M21",
   "cards": 25,
   "secret": 0,
+  "extras": [],
   "release": "2021-02-09",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/0c/SetSymbolMcDonalds_Collection_2021.png",
   "logo_url": "https://images.pokemontcg.io/mcd21/logo.png",
@@ -2263,6 +3158,7 @@
   "abbr": "M22",
   "cards": 15,
   "secret": 0,
+  "extras": [],
   "release": "2022-08-03",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/a/a0/SetSymbolMcDonalds_Collection_2022.png",
   "logo_url": "https://images.pokemontcg.io/mcd22/logo.png",
@@ -2279,6 +3175,7 @@
   "abbr": "M23",
   "cards": 15,
   "secret": 0,
+  "extras": [],
   "release": "2023-07-27",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/91/SetSymbolMcDonalds_Collection_2023.png",
   "logo_url": null,
@@ -2295,6 +3192,7 @@
   "abbr": "M24",
   "cards": 15,
   "secret": 0,
+  "extras": [],
   "release": "2024-12-04",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/71/SetSymbolMcDonalds_Collection_2024.png",
   "logo_url": null,
@@ -2311,6 +3209,7 @@
   "abbr": "TT22",
   "cards": 30,
   "secret": 0,
+  "extras": [],
   "release": "2022-09-01",
   "symbol_url": null,
   "logo_url": "https://archives.bulbagarden.net/media/upload/1/18/Trick_or_Trade.png",
@@ -2327,6 +3226,7 @@
   "abbr": "TT23",
   "cards": 30,
   "secret": 0,
+  "extras": [],
   "release": "2023-09-01",
   "symbol_url": null,
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/00/Trick_or_Trade_2023.png",
@@ -2343,6 +3243,7 @@
   "abbr": "TT24",
   "cards": 30,
   "secret": 0,
+  "extras": [],
   "release": "2024-08-30",
   "symbol_url": null,
   "logo_url": "https://archives.bulbagarden.net/media/upload/e/ed/Trick_or_Trade_2024.png",
@@ -2359,6 +3260,7 @@
   "abbr": "POP1",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2004-09-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/f/fc/SetSymbolPOP_Series_1.png",
   "logo_url": "https://images.pokemontcg.io/pop1/logo.png",
@@ -2375,6 +3277,7 @@
   "abbr": "POP2",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2005-08-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/49/SetSymbolPOP_Series_2.png",
   "logo_url": "https://images.pokemontcg.io/pop2/logo.png",
@@ -2391,6 +3294,7 @@
   "abbr": "POP3",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2006-04-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/4c/SetSymbolPOP_Series_3.png",
   "logo_url": "https://images.pokemontcg.io/pop3/logo.png",
@@ -2407,6 +3311,7 @@
   "abbr": "POP4",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2006-08-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/3/3c/SetSymbolPOP_Series_4.png",
   "logo_url": "https://images.pokemontcg.io/pop4/logo.png",
@@ -2423,6 +3328,7 @@
   "abbr": "POP5",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2007-03-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/9f/SetSymbolPOP_Series_5.png",
   "logo_url": "https://images.pokemontcg.io/pop5/logo.png",
@@ -2439,6 +3345,7 @@
   "abbr": "POP6",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2007-09-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/41/SetSymbolPOP_Series_6.png",
   "logo_url": "https://images.pokemontcg.io/pop6/logo.png",
@@ -2455,6 +3362,7 @@
   "abbr": "POP7",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2008-03-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/7/7b/SetSymbolPOP_Series_7.png",
   "logo_url": "https://images.pokemontcg.io/pop7/logo.png",
@@ -2471,6 +3379,7 @@
   "abbr": "POP8",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2008-09-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/4/4c/SetSymbolPOP_Series_8.png",
   "logo_url": "https://images.pokemontcg.io/pop8/logo.png",
@@ -2487,6 +3396,7 @@
   "abbr": "POP9",
   "cards": 17,
   "secret": 0,
+  "extras": [],
   "release": "2009-03-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/99/SetSymbolPOP_Series_9.png",
   "logo_url": "https://images.pokemontcg.io/pop9/logo.png",
@@ -2503,6 +3413,7 @@
   "abbr": "PPS1",
   "cards": 170,
   "secret": 0,
+  "extras": [],
   "release": "2022-11-09",
   "symbol_url": null,
   "logo_url": null,
@@ -2519,6 +3430,7 @@
   "abbr": "PPS2",
   "cards": 154,
   "secret": 0,
+  "extras": [],
   "release": "2023-01-19",
   "symbol_url": null,
   "logo_url": null,
@@ -2535,6 +3447,7 @@
   "abbr": "PPS3",
   "cards": 163,
   "secret": 0,
+  "extras": [],
   "release": "2023-08-14",
   "symbol_url": null,
   "logo_url": null,
@@ -2551,6 +3464,7 @@
   "abbr": "PPS4",
   "cards": 86,
   "secret": 0,
+  "extras": [],
   "release": "2024-02-14",
   "symbol_url": null,
   "logo_url": null,
@@ -2567,6 +3481,7 @@
   "abbr": "PPS5",
   "cards": 86,
   "secret": 0,
+  "extras": [],
   "release": "2024-08-14",
   "symbol_url": null,
   "logo_url": null,
@@ -2583,6 +3498,7 @@
   "abbr": "PPS6",
   "cards": 94,
   "secret": 0,
+  "extras": [],
   "release": "2025-02-14",
   "symbol_url": null,
   "logo_url": null,
@@ -2599,6 +3515,7 @@
   "abbr": "PPS7",
   "cards": 96,
   "secret": 0,
+  "extras": [],
   "release": "2025-08-14",
   "symbol_url": null,
   "logo_url": null,
@@ -2615,6 +3532,7 @@
   "abbr": "PPS8",
   "cards": 91,
   "secret": 0,
+  "extras": [],
   "release": "2026-01-01",
   "symbol_url": null,
   "logo_url": null,
@@ -2631,6 +3549,7 @@
   "abbr": "PPS9",
   "cards": 80,
   "secret": 0,
+  "extras": [],
   "release": "2026-07-01",
   "symbol_url": null,
   "logo_url": null,
@@ -2647,6 +3566,7 @@
   "abbr": "SI",
   "cards": 18,
   "secret": 0,
+  "extras": [],
   "release": "2001-07-31",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/1/1e/SetSymbolSouthern_IslandsENG.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/c/c4/SouthernIslandsLogo.png",
@@ -2663,6 +3583,7 @@
   "abbr": "—",
   "cards": 9,
   "secret": 0,
+  "extras": [],
   "release": "2002-12-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/9/9d/SetSymbolBest.png",
   "logo_url": "https://images.pokemontcg.io/bp/logo.png",
@@ -2679,6 +3600,7 @@
   "abbr": "CC",
   "cards": 5,
   "secret": 0,
+  "extras": [],
   "release": "2004-07-01",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/c/cb/Kids_WB_logo.png",
   "logo_url": null,
@@ -2695,6 +3617,7 @@
   "abbr": "RM",
   "cards": 16,
   "secret": 0,
+  "extras": [],
   "release": "2009-12-02",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/6/63/SetSymbolPok%C3%A9mon_Rumble.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/0/07/Pok%C3%A9mon_Rumble_logo.png",
@@ -2711,6 +3634,7 @@
   "abbr": "FUT20",
   "cards": 5,
   "secret": 0,
+  "extras": [],
   "release": "2020-09-11",
   "symbol_url": "https://archives.bulbagarden.net/media/upload/0/09/SetSymbolPok%C3%A9mon_Futsal.png",
   "logo_url": "https://archives.bulbagarden.net/media/upload/6/66/Pok%C3%A9mon_Futsal_Logo.png",
@@ -2727,6 +3651,7 @@
   "abbr": "CL",
   "cards": 102,
   "secret": 0,
+  "extras": [],
   "release": "2023-11-17",
   "symbol_url": null,
   "logo_url": null,

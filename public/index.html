@@ -68,6 +68,25 @@
   .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
   .btn.primary:hover { filter: brightness(1.08); }
   .btn:disabled { opacity: .45; cursor: not-allowed; }
+  .upd { width: min(640px, calc(100vw - 32px)); border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); padding: 18px 20px; }
+  .upd::backdrop { background: rgb(0 0 0 / .35); }
+  .upd h2 { font-family: var(--display); text-transform: uppercase; letter-spacing: .06em; font-size: 18px; margin: 0 0 6px; }
+  .upd-note { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+  .upd-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .upd-actions .spacer { flex: 1; }
+  .upd-status { margin: 12px 0 0; font-weight: 600; min-height: 1.3em; display: flex; align-items: center; gap: 8px; }
+  .upd-status.err { color: var(--accent); }
+  .upd-ic { flex: none; width: 18px; height: 18px; }
+  .upd-ic.spin { border: 2.5px solid var(--line); border-top-color: var(--ink); border-radius: 50%; animation: upd-spin .8s linear infinite; box-sizing: border-box; }
+  .upd-ic.ok { color: #1e8e3e; }
+  .upd-ic.bad { color: var(--accent); }
+  #btn-update.busy::before { content: ""; display: inline-block; width: 11px; height: 11px; margin-right: 7px; vertical-align: -1px;
+    border: 2px solid var(--line); border-top-color: var(--ink); border-radius: 50%; animation: upd-spin .8s linear infinite; box-sizing: border-box; }
+  @keyframes upd-spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .upd-ic.spin, #btn-update.busy::before { animation-duration: 2.4s; } }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .upd-ic.ok { color: #5bd17c; } }
+  :root[data-theme="dark"] .upd-ic.ok { color: #5bd17c; }
+  .upd-log { margin: 8px 0 0; max-height: 40vh; overflow: auto; background: var(--panel-2); border-radius: 6px; padding: 10px; font-size: 12px; line-height: 1.35; white-space: pre-wrap; word-break: break-word; }
   .btn:focus-visible, input:focus-visible, select:focus-visible, .row:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
   aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
@@ -202,7 +221,7 @@
   .label:lang(ko) .txtlogo { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
   .label:lang(zh-Hant) .txtlogo { font-family: "Noto Sans TC", "PingFang TC", sans-serif; }
   .label:lang(zh-Hans) .txtlogo { font-family: "Noto Sans SC", "PingFang SC", sans-serif; }
-  .label:not(:lang(en)) .txtlogo { text-transform: none; font-weight: 800; }
+  .label:not(:lang(en)):not(:lang(fr)) .txtlogo { text-transform: none; font-weight: 800; }
   .label .logo.with-en { flex-direction: column; gap: calc(var(--min) * 0.02); }
   .label .logo.with-en > img { min-height: 0; }
   .label .logo .en { font-family: var(--lfont, "Jost"), sans-serif; font-weight: 500; font-size: calc(var(--min) * 0.055); text-align: center; line-height: 1.1; flex: none; }
@@ -359,17 +378,34 @@
     <span class="tag" id="tagline">Pokémon TCG set labels, every English expansion</span>
     <span class="count" id="count">0 selected</span>
     <span class="spacer"></span>
+    <button class="btn" id="btn-update" type="button" hidden title="Download the latest set lists and rebuild the data (local server only)">Update data</button>
     <button class="btn" id="btn-png" type="button" title="Download every selected label as a PNG at 203 dpi (thermal label printer resolution), zipped. Print them from the Phomemo app.">Download PNGs</button>
     <button class="btn" id="btn-index" type="button" title="Print one index page per generation: every set with its icon and name or logo">Print index</button>
     <button class="btn" id="btn-sheet" type="button" title="Lay the selected labels out on paper (Letter, A4, 3×5 cards or Avery label sheets) for a color printer">Print sheet</button>
     <button class="btn primary" id="btn-labels" type="button" title="One label per page at the roll size, for a label printer such as the Phomemo M110">Print labels</button>
   </header>
 
+  <dialog class="upd" id="upd" aria-labelledby="upd-h">
+    <h2 id="upd-h">Update data</h2>
+    <p class="upd-note">Downloads the latest set lists and rebuilds the data on this computer. English takes a few minutes
+      (Bulbapedia, then the French data is rebuilt on top); French about a minute (Poképédia and TCGdex).</p>
+    <div class="upd-actions">
+      <button class="btn primary" type="button" data-what="all">English + French</button>
+      <button class="btn" type="button" data-what="en">English</button>
+      <button class="btn" type="button" data-what="fr">French</button>
+      <span class="spacer"></span>
+      <button class="btn" type="button" id="upd-close">Close</button>
+    </div>
+    <p class="upd-status" id="upd-status" role="status"></p>
+    <pre class="upd-log" id="upd-log" hidden></pre>
+  </dialog>
+
   <aside class="left" aria-label="Choose sets">
     <div class="side-head">
       <label class="langrow" id="langrow"><span>Cards</span>
         <select id="lang" aria-label="Card language">
           <option value="en">English</option>
+          <option value="fr">Français · French</option>
           <option value="ja">日本語 · Japanese</option>
           <option value="ko">한국어 · Korean</option>
           <option value="zh-tw">繁體中文 · Traditional Chinese</option>
@@ -379,7 +415,7 @@
       <div class="chips" id="type-chips">
         <button class="chip" type="button" data-type="Main Series Expansion" aria-pressed="true">Main sets</button>
         <button class="chip" type="button" data-type="Special Expansion" aria-pressed="true">Special sets</button>
-        <button class="chip" type="button" data-type="Other" aria-pressed="false">Promos &amp; misc</button>
+        <button class="chip" type="button" data-type="Other" aria-pressed="true">Promos &amp; misc</button>
         <button class="chip" type="button" id="chip-new" aria-pressed="false" title="Hide the sets that were in the 2023 index-card batch">New since 2023</button>
       </div>
       <div class="chips" id="series-chips"></div>
@@ -518,7 +554,7 @@
         </select></label>
       <label class="field"><span class="lbl">Arrangement <small>Auto stacks tall labels, puts the table beside the logo on wide ones, and turns spine strips on their side.</small></span>
         <select id="layout"><option value="auto">Auto</option><option value="stack">Stacked</option><option value="side">Table beside logo</option><option value="spine">Spine: turned to read down the edge</option></select></label>
-      <label class="field"><span class="lbl">Thermal printer mode <small>Pure black &amp; white, heavier text. On by default for rolls.</small></span><input type="checkbox" id="mono"></label>
+      <label class="field"><span class="lbl">Thermal printer mode <small>Pure black &amp; white, heavier text.</small></span><input type="checkbox" id="mono"></label>
       <details class="adv" id="lookadv"><summary>Advanced</summary>
         <label class="field"><span class="lbl">Details table</span>
           <select id="tstyle"><option value="caps">Small caps headings</option><option value="classic">Classic "Release: date"</option></select></label>
@@ -600,8 +636,9 @@
   const EN_SETS = (window.POKEMON_SETS || []).map((s, i) => ({ ...s, i }));
   let SETS = EN_SETS;
   let LANG = 'en', LANGDATA = null;
-  // Card-language datasets (built by pipeline/cjk) load on demand, with a Noto font for the script.
+  // Card-language datasets (built by pipeline/fr and pipeline/cjk) load on demand, with a Noto font for Asian scripts.
   const LANGS = {
+    'fr': { file: 'sets_fr.js', font: null, tag: 'fr', name: 'French', h: ['N° ext.', 'Sortie', 'Série', 'Cartes'], special: 'Spéciale' },
     'ja': { file: 'sets_ja.js', font: 'Noto+Sans+JP', tag: 'ja', name: 'Japanese', h: ['番号', '発売日', 'シリーズ', 'カード'], special: '特別' },
     'ko': { file: 'sets_ko.js', font: 'Noto+Sans+KR', tag: 'ko', name: 'Korean', h: ['번호', '발매일', '시리즈', '카드'], special: '스페셜' },
     'zh-tw': { file: 'sets_zhtw.js', font: 'Noto+Sans+TC', tag: 'zh-Hant', name: 'Traditional Chinese', h: ['編號', '發售日', '系列', '卡牌'], special: '特別' },
@@ -626,15 +663,18 @@
     });
     return loadedFonts[family];
   }
-  const fontsReady = () => LANG === 'en' ? Promise.resolve() : loadFont(LANGS[LANG].font);
+  const fontsReady = () => LANG === 'en' || !LANGS[LANG].font ? Promise.resolve() : loadFont(LANGS[LANG].font);
   async function datasetFor(lang) {
     if (lang === 'en') return { sets: EN_SETS, meta: null };
     const L = LANGS[lang];
-    loadFont(L.font);
+    if (L.font) loadFont(L.font);
     await loadScript(L.file);
     const meta = window.SLP_LANG && window.SLP_LANG[lang];
     if (!meta) throw new Error('No data for ' + lang);
-    if (!meta._sets) meta._sets = meta.sets.map((s, i) => ({ ...s, i }));
+    if (!meta._sets) {
+      const enBySlug = new Map(EN_SETS.map(s => [s.slug, s]));   // French sets share the English symbols
+      meta._sets = meta.sets.map((s, i) => ({ ...s, symbol_img: s.symbol_img || (enBySlug.get(s.en_slug) || {}).symbol_img || null, i }));
+    }
     return { sets: meta._sets, meta };
   }
   const MONS = (window.POKEMON_SPECIES || []).map((p, i) => ({ ...p, i, kind: 'mon' }));
@@ -674,12 +714,12 @@
   const STORE = 'setLabelPress.v1';   // key kept for continuity; the stored object carries its own version (v)
 
   const defaults = {
-    target: 'roll', copiesBy: {}, preset: '40x60', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: true,
+    target: 'sheet', copiesBy: {}, preset: 'card', cw: 40, ch: 60, orient: 'auto', pw: '', ph: '', layout: 'auto', pad: 2, sym: 20, fs: 100, mono: false,
     font: 'Jost', tstyle: 'caps', rule: true, monoLogos: false, monoCut: 175, tintIcon: false, cIcon: '#111111', cAbbr: '#111111', cTh: '#111111', cTd: '#111111',
     abbrmode: 'never', abbrsize: 'small', icondate: '2023-03-31', numbering: 'seq', special: 'badge', cards: 'total', extras: {}, codelang: 'EN',
-    paper: 'letter', porient: 'auto', place: 'center', idxShow: 'name', idxPage: 'full', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'label', v: 3,
-    types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': false }, onlyNew: false, series: null, selected: [], current: null,
-    lang: 'en', headings: 'en', showen: false, perLang: {},
+    paper: 'a4', porient: 'auto', place: 'center', idxShow: 'name', idxPage: 'full', margin: 0, gap: 0, guides: true, zoom: 3, preview: 'sheet', v: 3,
+    types: { 'Main Series Expansion': true, 'Special Expansion': true, 'Other': true }, onlyNew: false, series: null, selected: [], current: null,
+    lang: 'fr', headings: 'native', showen: false, perLang: {},
     mode: 'sets', monSel: [], monCur: null, monCopies: {}, monGen: null, monLegend: false,
     monArt: true, monArtMode: 'dither', monNo: true, monTypes: true, monTColor: true, monDex: true, monText: 'short', monFoot: true, monUnits: 'imperial'
   };
@@ -753,7 +793,7 @@
     const all = document.createElement('button'); all.type = 'button'; all.className = 'chip'; all.textContent = 'All series';
     all.setAttribute('aria-pressed', String(!state.series)); all.onclick = () => { state.series = null; save(); renderAll(); };
     box.appendChild(all);
-    seriesOrder.forEach(name => {
+    [...seriesOrder].reverse().forEach(name => {
       const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = name;
       b.setAttribute('aria-pressed', String(state.series === name));
       b.onclick = () => { state.series = state.series === name ? null : name; save(); renderAll(); };
@@ -780,7 +820,8 @@
     const mons = isMons(), sk = selKey(), ck = curKey();
     const sel = new Set(state[sk]);
     let lastGroup = null;
-    visible().forEach(s => {
+    const items = visible();
+    (mons ? items : items.reverse()).forEach(s => {   // sets: newest first
       const group = mons ? 'Generation ' + s.genr + ' · ' + s.year : s.series;
       if (group !== lastGroup) { const h = document.createElement('div'); h.className = 'series-h'; h.textContent = group; list.appendChild(h); lastGroup = group; }
       const row = document.createElement('div'); row.className = 'row' + (state[ck] === s.i ? ' current' : ''); row.tabIndex = 0; row.setAttribute('role', 'option');
@@ -845,10 +886,11 @@
 
   const native = () => LANG !== 'en' && state.headings === 'native';
   const specialWord = () => native() ? LANGS[LANG].special : 'Special';
+  const EN_H = ['Exp No.', 'Release', 'Gen', 'Cards'];
   function rows(s) {
     const out = [];
     const nat = native();
-    const H = nat ? LANGS[LANG].h : ['Exp No.', 'Release', 'Gen', 'Cards'];
+    const H = nat ? LANGS[LANG].h : EN_H;
     if (state.numbering === 'seq' && s.expno != null) out.push([H[0], String(s.expno)]);
     else if (state.numbering === 'code' && s.setno) out.push([H[0], s.setno]);
     out.push([H[1], s.release || '—']);
@@ -897,6 +939,12 @@
   }
   // Black Star Promo sets: era logo + promo star; the star is also their symbol (next to the code box from S&V on)
   const PROMO_LOGO = { WP: 'base-set', NP: 'ex-ruby-sapphire', DPP: 'diamond-pearl', HSP: 'heartgold-soulsilver', BWP: 'black-white', XYP: 'xy', SMP: 'sun-moon', SWSD: 'sword-shield', SVP: 'scarlet-violet', MEP: 'mega-evolution' };
+  // French promos take the French era logo (the set whose English twin is that era's base set)
+  function promoLogoFor(s) {
+    const slug = PROMO_LOGO[s.abbr]; if (!slug) return null;
+    const twin = LANG === 'fr' && SETS.find(x => x.en_slug === slug);
+    return (twin && twin.logo_img) || 'img/logos/' + slug + '.png';
+  }
   // plain five-point black star (the Black Star Promo mark), as an SVG data URI so it tints and prints like the icons
   const STAR_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50.0 4.0 60.3 35.8 93.7 35.8 66.7 55.4 77.0 87.2 50.0 67.6 23.0 87.2 33.3 55.4 6.3 35.8 39.7 35.8z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/></svg>');   // the Black Star Promo mark: regular pentagram, rounded tips
   const STAR_OUTLINE_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="4.7 2.5 90.6 86.2"><path d="M50.0 4.0 60.3 35.8 93.7 35.8 66.7 55.4 77.0 87.2 50.0 67.6 23.0 87.2 33.3 55.4 6.3 35.8 39.7 35.8z" fill="none" stroke="#000" stroke-width="2.6" stroke-linejoin="round"/></svg>');   // border-only star for the background
@@ -938,7 +986,7 @@
     if (codeEra) {
       const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
       const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
-      if (state.codelang !== 'none') { cb.classList.add('en'); const grp = document.createElement('div'); grp.className = 'grp'; const lang = document.createElement('span'); lang.className = 'lang'; lang.textContent = state.codelang || 'EN'; grp.append(txt, lang); inner.appendChild(grp); }
+      if (state.codelang !== 'none') { cb.classList.add('en'); const grp = document.createElement('div'); grp.className = 'grp'; const lang = document.createElement('span'); lang.className = 'lang'; lang.textContent = LANG === 'fr' ? 'FR' : state.codelang || 'EN'; grp.append(txt, lang); inner.appendChild(grp); }
       else inner.appendChild(txt);
       cb.appendChild(inner); box.appendChild(cb); host.appendChild(box); fitCode(cb);
     } else if (promo) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = solidBlack(PROMO_ICON, 'sym:promo', 200); box.appendChild(im); host.appendChild(box); }
@@ -977,7 +1025,7 @@
         const sm = document.createElement('small'); sm.textContent = (x.release || '') + (x.expno != null ? ' · No. ' + x.expno : '') + (x.type === 'Special Expansion' ? ' · Special' : x.type === 'Promo' ? ' · Promo' : ''); nm.appendChild(sm);
         if (state.idxShow === 'logo') {
           const top = document.createElement('div'); top.className = 'top'; top.append(iconEl(x), nm); cell.appendChild(top);
-          const lg = document.createElement('img'); lg.className = 'lg'; lg.alt = ''; const promoLogo = x.type === 'Promo' && PROMO_LOGO[x.abbr] ? 'img/logos/' + PROMO_LOGO[x.abbr] + '.png' : x.logo_img;
+          const lg = document.createElement('img'); lg.className = 'lg'; lg.alt = ''; const promoLogo = (x.type === 'Promo' && promoLogoFor(x)) || x.logo_img;
           if (promoLogo) { lg.src = promoLogo; cell.appendChild(lg); }
         } else cell.append(iconEl(x), nm);
         grid.appendChild(cell);
@@ -1014,7 +1062,11 @@
     if (ab || badge) {
       const blk = document.createElement('div'); blk.className = 'abbrblock';
       if (ab) { const a = document.createElement('span'); a.className = 'abbr'; a.textContent = s.abbr; blk.appendChild(a); }   // no abbreviation: the badge rises to the top, level with the icon
-      if (badge) { const b = document.createElement('span'); b.className = 'badge'; b.textContent = specialWord(); blk.appendChild(b); }
+      if (badge) {
+        const b = document.createElement('span'); b.className = 'badge'; b.textContent = specialWord();
+        if (b.textContent.length > 7) b.style.width = 'calc(var(--sym) * ' + (1.15 * b.textContent.length / 7).toFixed(4) + ')';   // the box fits "SPECIAL": longer words ("SPECIALE") widen it, same height and text size
+        blk.appendChild(b);
+      }
       top.appendChild(blk);
     }
     const codeEra = !!(state.icondate && s.release >= state.icondate && s.abbr && !/Prize Pack|Trick or Trade/i.test(s.name));
@@ -1022,8 +1074,8 @@
     if (codeEra) {   // draw the code box ourselves so every text-code icon is the same size and weight
       const box = document.createElement('div'); box.className = 'symbox code'; const cb = document.createElement('div'); cb.className = 'codebox' + (s.abbr.length > 3 ? ' long' : '');
       const inner = document.createElement('div'); inner.className = 'inner'; const txt = document.createElement('span'); txt.className = 'txt'; txt.textContent = s.abbr;
-      if (state.codelang !== 'none' && LANG === 'en') {   // Asian cards print the code alone
-        cb.classList.add('en'); const grp = document.createElement('div'); grp.className = 'grp'; const lang = document.createElement('span'); lang.className = 'lang'; lang.textContent = state.codelang || 'EN';
+      if (state.codelang !== 'none' && (LANG === 'en' || LANG === 'fr')) {   // Asian cards print the code alone
+        cb.classList.add('en'); const grp = document.createElement('div'); grp.className = 'grp'; const lang = document.createElement('span'); lang.className = 'lang'; lang.textContent = LANG === 'fr' ? 'FR' : state.codelang || 'EN';
         grp.append(txt, lang); inner.appendChild(grp);
       } else inner.appendChild(txt);
       cb.appendChild(inner);
@@ -1031,7 +1083,7 @@
     } else if (promo) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted({ slug: 'promo-icon', symbol_img: PROMO_ICON }, state.cIcon) : solidBlack(PROMO_ICON, 'sym:promo', 200); box.appendChild(im); top.appendChild(box); }
     else if (s.symbol_img) { const box = document.createElement('div'); box.className = 'symbox'; const im = document.createElement('img'); im.alt = ''; im.src = (state.tintIcon && !state.mono) ? tinted(s, state.cIcon) : solidBlack(s.symbol_img, 'sym:' + s.slug, 200); box.appendChild(im); top.appendChild(box); }
     const logo = document.createElement('div'); logo.className = 'logo';
-    const promoLogo = promo && PROMO_LOGO[s.abbr] ? 'img/logos/' + PROMO_LOGO[s.abbr] + '.png' : null;
+    const promoLogo = promo ? promoLogoFor(s) : null;
     if (promoLogo) {
       logo.classList.add('promo');
       if (PROMO_STAR) { const st = document.createElement('img'); st.className = 'star'; st.alt = ''; st.src = PROMO_STAR; logo.appendChild(st); }
@@ -1043,6 +1095,8 @@
     rows(s).forEach(([k, v]) => {
       const tr = document.createElement('tr'); if (k === 'Gen' || (native() && k === LANGS[LANG].h[2])) tr.className = 'gen';
       const th = document.createElement('th'); th.textContent = state.tstyle === 'caps' ? k : k + ':'; th.style.verticalAlign = 'top';
+      const j = LANG === 'fr' && native() ? LANGS.fr.h.indexOf(k) : -1;   // fit() lays French tables out as if the headings were English
+      if (j >= 0) th.dataset.en = EN_H[j] + (state.tstyle === 'caps' ? '' : ':');
       const td = document.createElement('td');
       v.split('\n').forEach((line, n) => { if (n) td.appendChild(document.createElement('br')); td.appendChild(document.createTextNode(line)); });
       tr.append(th, td); tb.appendChild(tr);
@@ -1050,8 +1104,19 @@
     table.appendChild(tb);
     if (side) { const col = document.createElement('div'); col.className = 'col'; col.append(top, logo); el.append(col, table); }
     else el.append(top, logo, table);
+    if (LANG === 'fr') noCapAccents(el);
     fit(el, table, side);
     return el;
+  }
+
+  // French labels: no accents on capitals ("Ecarlate", "SERIE"). Text the CSS uppercases loses every accent.
+  const stripMarks = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC');
+  function noCapAccents(root) {
+    const upper = '.badge, .txtlogo' + (state.tstyle === 'caps' ? ', th' : '');
+    const walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    for (let n; (n = walk.nextNode());) {
+      n.nodeValue = n.parentElement.closest(upper) ? stripMarks(n.nodeValue) : n.nodeValue.replace(/\p{Lu}/gu, stripMarks);
+    }
   }
 
   // ---------- Pokémon (character) labels ----------
@@ -1214,6 +1279,10 @@
   // left out of the width measurement: a long generation name wraps on its own label instead of shrinking the batch.
   function fit(el, table, side) {
     const m = $('measure'); m.appendChild(el);
+    // French headings: measure with the English words so size and column match the English label, then put the
+    // French words back in a heading column held at the English width
+    const swap = [...table.querySelectorAll('th[data-en]')].map(th => [th, th.textContent]);
+    swap.forEach(([th]) => { th.textContent = th.dataset.en; });
     const cs = getComputedStyle(el);
     const innerW = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
     const innerH = el.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
@@ -1231,6 +1300,12 @@
     el._k = (needW > 0 && needH > 0) ? Math.min(availW / needW, availH / needH) * 0.985 : 1;
     // own limit: a label whose generation wraps may need a touch less, but only it shrinks, not the batch
     el._kself = wraps ? Math.min(availW / needW, (availH * 1.12) / (needH + line)) * 0.985 : el._k;
+    if (swap.length) {
+      const ths = rowsEl.map(tr => tr.firstElementChild);
+      const thW = Math.max(...ths.map(th => th.offsetWidth)) / parseFloat(getComputedStyle(ths[0]).fontSize);   // in the heading's em: follows applyScale
+      swap.forEach(([th, txt]) => { th.textContent = txt; });
+      ths.forEach(th => { th.style.boxSizing = 'border-box'; th.style.width = thW + 'em'; });
+    }
     m.removeChild(el);
     applyScale(el, el._k);
   }
@@ -1473,10 +1548,10 @@
       save(); bind(); syncUI(); renderPreview();
     });
   });
-  // Switching printer: sensible defaults follow (thermal on for rolls, matching preview, a roll size on a roll).
+  // Switching printer: sensible defaults follow (matching preview, a roll size on a roll). Thermal mode stays as set.
   function targetChanged() {
     const roll = state.target === 'roll';
-    state.mono = roll; state.preview = roll ? 'roll' : 'sheet';
+    state.preview = roll ? 'roll' : 'sheet';
     if (roll && !isRoll()) state.preset = '40x30';
     if (!roll && isRoll() && state.preset !== 'custom') state.preset = 'card';
     bind();
@@ -1559,6 +1634,7 @@
     if (!first) {
       const saved = (state.perLang || {})[lang];
       PER_LANG.forEach(k => { state[k] = saved ? saved[k] : (Array.isArray(defaults[k]) ? [] : defaults[k] && typeof defaults[k] === 'object' ? {} : defaults[k]); });
+      if (lang === 'fr') { state.headings = 'native'; bind(); }   // French cards: French table headings and era names
     }
     state.selected = (state.selected || []).filter(i => i < SETS.length);
     if (state.series && !SETS.some(s => s.series === state.series)) state.series = null;
@@ -1573,6 +1649,45 @@
   setLanguage($('lang').value, true);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderPreview);
   let rs; window.addEventListener('resize', () => { clearTimeout(rs); rs = setTimeout(renderPreview, 120); });
+
+  // ---------- "Update data" (only when served by scripts/serve.mjs, which runs the pipelines) ----------
+  const upd = $('upd');
+  let updTimer = null;
+  function showJob(j) {
+    const busy = !!j.running;
+    upd.querySelectorAll('[data-what]').forEach(b => { b.disabled = busy; });
+    const st = $('upd-status'); st.classList.toggle('err', j.ok === false);
+    $('btn-update').classList.toggle('busy', busy);
+    const text = busy ? 'Updating ' + j.job + ' data…' : j.ok === true ? j.job + ' data updated' + (j.finished !== upd.dataset.seen ? '. Reloading…' : ' at ' + new Date(j.finished).toLocaleTimeString() + '.') : j.ok === false ? j.job + ' update failed: the data on disk is unchanged or partly rebuilt. See the log.' : '';
+    // spinner while running, check when done, cross on failure
+    const icon = busy ? '<span class="upd-ic spin" aria-hidden="true"></span>'
+      : j.ok === true ? '<svg class="upd-ic ok" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M6.5 12.5l3.5 3.5 7.5-8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+      : j.ok === false ? '<svg class="upd-ic bad" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>' : '';
+    st.innerHTML = icon; if (text) st.appendChild(document.createTextNode(text));
+    const log = $('upd-log'); log.hidden = !j.log;
+    const atEnd = log.scrollTop + log.clientHeight >= log.scrollHeight - 20;
+    log.textContent = j.log; if (atEnd) log.scrollTop = log.scrollHeight;
+  }
+  async function pollJob() {
+    clearTimeout(updTimer);
+    let j; try { j = await (await fetch('/api/update', { cache: 'no-store' })).json(); } catch (e) { updTimer = setTimeout(pollJob, 2000); return; }
+    showJob(j);
+    if (j.running) updTimer = setTimeout(pollJob, 1000);
+    else if (j.ok && j.finished && j.finished !== upd.dataset.seen) { upd.dataset.seen = j.finished; setTimeout(() => location.reload(), 2000); }   // long enough to see the check
+  }
+  upd.querySelectorAll('[data-what]').forEach(b => b.onclick = async () => {
+    const r = await fetch('/api/update?what=' + b.dataset.what, { method: 'POST' });
+    if (r.status === 202 || r.status === 409) pollJob();
+    else { $('upd-status').textContent = 'Could not start the update (' + r.status + ').'; $('upd-status').classList.add('err'); }
+  });
+  $('upd-close').onclick = () => upd.close();
+  $('btn-update').onclick = () => { upd.showModal(); pollJob(); };
+  fetch('/api/update', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => {
+    if (!j || typeof j.running !== 'boolean') return;   // the static site: no button
+    $('btn-update').hidden = false;
+    upd.dataset.seen = j.finished || '';   // a job that finished before this page loaded doesn't reload it again
+    if (j.running) { upd.showModal(); pollJob(); }
+  }).catch(() => {});
 })();
 </script>
 </body>

@@ -27,6 +27,20 @@ Runs entirely in the browser. No accounts, no tracking, no server-side anything:
 
 Settings are saved in your browser only.
 
+## Running locally (Windows)
+
+`scripts\start.ps1` (re)starts `scripts/serve.mjs` in the background on http://localhost:8000 (this machine only)
+and opens it in Google Chrome. Served this way, the page shows an **Update data** button that runs the pipelines
+on the server and reloads when they finish: English (`pipeline/update_en.py`, then the French data is rebuilt on
+top), French (`fetch_pokepedia.mjs` + `build_fr.mjs --refresh`), or both. The static site has no such button.
+Needs Node 18+, and Python 3 with Pillow for the English update.
+
+```
+powershell -ExecutionPolicy Bypass -File scripts\start.ps1
+```
+
+A desktop shortcut can run the same command.
+
 ## Layout
 
 ```
@@ -44,6 +58,9 @@ wrangler.toml      Cloudflare Workers config (custom domain labels.omg.irish)
 ```
 
 ## Regenerating the data when new sets ship
+
+`python pipeline/update_en.py` runs the downloads and the four set steps below in one go (images already in
+`pipeline/img/` are kept, so only new sets download). By hand:
 
 ```
 cd pipeline
@@ -105,6 +122,28 @@ python build.py            # -> ../../public/sets_{ja,ko,zhtw,zhcn}.js and ../..
 ```
 
 A new Korean set needs one line in `KO_TO_JP` (Korean name -> Japanese code); `build.py` prints any it can't match.
+
+## French sets
+
+French boosters are translations of the English sets, so `public/sets_fr.js` reuses the English records (card
+counts, codes, symbols). French names and release dates come from [Poképédia](https://www.pokepedia.fr/)'s
+expansion infoboxes, era names from [TCGdex](https://tcgdex.dev/), logos from TCGdex or else Poképédia. A set is
+listed if TCGdex has it in French or Poképédia gives a French release date (Base Set 2, Gym Heroes/Challenge,
+Legendary Collection, Skyridge, Team Rocket Returns, Arceus and Legendary Treasures never came out in French).
+Expansion numbers count the French releases only, in French release order. Set de Base never had a logo and gets
+the plain Pokémon one; the POP series have none, so their labels print the name.
+
+Regenerate after `sets.js` changes (Node 18+):
+
+```
+cd pipeline/fr
+node fetch_pokepedia.mjs      # Poképédia infoboxes + logo URLs -> pokepedia_fr.json
+node build_fr.mjs --refresh   # TCGdex -> tcgdex_fr.json, ../../public/sets_fr.js and ../../public/img/logos/fr/
+```
+
+The build prints what it couldn't match: a set whose English name differs from TCGdex's needs a line in `ID_OVERRIDE`,
+one whose Poképédia page doesn't name the English set needs a line in `PKP_OVERRIDE`. Logos are cached by file;
+delete one to refetch it.
 
 ## License
 
